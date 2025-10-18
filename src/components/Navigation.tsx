@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Menu, X, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate, useLocation } from "react-router-dom";
-import NotificationBell from "./NotificationBell";
+
 
 const Navigation = () => {
   const navigate = useNavigate();
