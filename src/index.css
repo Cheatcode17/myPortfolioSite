@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cyberpunk Dark Theme */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 6%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 6%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Electric Blue Primary */
+    --primary: 194 100% 50%;
+    --primary-foreground: 240 10% 3.9%;
+    --primary-glow: 194 100% 65%;
+
+    /* Purple Secondary */
+    --secondary: 280 70% 60%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Crimson Accent */
+    --accent: 348 83% 58%;
+    --accent-foreground: 0 0% 98%;
+
+    --muted: 240 10% 12%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 10% 15%;
+    --input: 240 10% 15%;
+    --ring: 194 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(194 100% 50%), hsl(280 70% 60%));
+    --gradient-glow: linear-gradient(135deg, hsl(194 100% 50% / 0.3), hsl(280 70% 60% / 0.3));
+    --gradient-accent: linear-gradient(135deg, hsl(280 70% 60%), hsl(348 83% 58%));
+    
+    /* Shadows & Glows */
+    --shadow-glow: 0 0 40px hsl(194 100% 50% / 0.4);
+    --shadow-glow-lg: 0 0 60px hsl(194 100% 50% / 0.5);
+    --shadow-purple: 0 0 40px hsl(280 70% 60% / 0.4);
+    --shadow-crimson: 0 0 40px hsl(348 83% 58% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
