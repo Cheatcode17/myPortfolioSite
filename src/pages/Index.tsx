@@ -6,6 +6,7 @@ import Skills from "@/components/Skills";
 import Music from "@/components/Music";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import AdBanner from "@/components/AdBanner";
 
 const Index = () => {
   return (
@@ -17,7 +18,9 @@ const Index = () => {
       <Skills />
       <Music />
       <Contact />
+      
       <Footer />
+      <AdBanner />
     </div>
   );
 };
